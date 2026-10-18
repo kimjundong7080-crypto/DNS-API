@@ -49,3 +49,14 @@ techlifeworld.com zone은 2026-10-18 삭제됨 (생성 후 원복).
 - Google 소유확인 CNAME 2종 양쪽 도메인에 존재
 - `mail.notemptme.com` A 레코드 없음 → MX 대상 미해석 (전환 전부터 존재)
 - 기존 사이트 백업: `docs/backup-beautheart-20261018.json`, `docs/backup-notemptme-20261018.json`
+
+## techlifeworld.com (진행 중)
+
+| 항목 | 상태 |
+|---|---|
+| 네임서버 | ns1/ns2.dns-parking.com (Hostinger) |
+| A / www CNAME | Google 4 IP / ghs.google.com (정상) |
+| 소유확인 CNAME | `hnivbinxwuoh` → `gv-baqjyuiig2umce.dv.googlehosted.com` |
+| 대상 블로그 | madomiad.blogspot.com ("madomi") — Blogger 도메인 등록 대기 |
+| CAA | `letsencrypt.org`만 허용 → `pki.goog` 추가 필요 |
+| HTTP/HTTPS | 404 / TLS 실패 (매핑·인증서 없음) |
