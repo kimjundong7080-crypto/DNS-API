@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T10:15:42+00:00",
+  "generated_at": "2026-10-18T10:16:41+00:00",
   "cloudflare": {
     "zones": [
       {
@@ -548,28 +548,73 @@
         ],
         "records": [
           {
-            "id": "cf075451ce2df9cbbf380b53c7212367",
+            "id": "bcbc43aba1a41f00d658838a9a810e46",
             "name": "notemptme.com",
             "type": "A",
-            "content": "217.77.4.134",
+            "content": "216.239.38.21",
             "proxiable": true,
-            "proxied": true,
-            "ttl": 1,
+            "proxied": false,
+            "ttl": 3600,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
-            "created_on": "2026-09-07T07:58:16.720094Z",
-            "modified_on": "2026-09-07T07:58:16.720094Z"
+            "created_on": "2026-10-18T10:16:14.630421Z",
+            "modified_on": "2026-10-18T10:16:14.630421Z"
+          },
+          {
+            "id": "399c298bcdeb7f4ef168d8a41722cc36",
+            "name": "notemptme.com",
+            "type": "A",
+            "content": "216.239.36.21",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 3600,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-18T10:16:14.352305Z",
+            "modified_on": "2026-10-18T10:16:14.352305Z"
+          },
+          {
+            "id": "0eab40e4c42a77c8c99a9b7f75c6416a",
+            "name": "notemptme.com",
+            "type": "A",
+            "content": "216.239.34.21",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 3600,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-18T10:16:14.120248Z",
+            "modified_on": "2026-10-18T10:16:14.120248Z"
+          },
+          {
+            "id": "d5abb617ba0bac7789831587e24b5339",
+            "name": "notemptme.com",
+            "type": "A",
+            "content": "216.239.32.21",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 3600,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-18T10:16:13.842718Z",
+            "modified_on": "2026-10-18T10:16:13.842718Z"
           },
           {
             "id": "078ba293d4d053dc4c40b82ef38fe841",
             "name": "www.notemptme.com",
             "type": "CNAME",
-            "content": "notemptme.com",
+            "content": "ghs.google.com",
             "proxiable": true,
-            "proxied": true,
-            "ttl": 1,
+            "proxied": false,
+            "ttl": 3600,
             "settings": {
               "flatten_cname": false
             },
@@ -577,7 +622,7 @@
             "comment": null,
             "tags": [],
             "created_on": "2026-09-07T07:58:16.694347Z",
-            "modified_on": "2026-09-07T07:58:16.694347Z"
+            "modified_on": "2026-10-18T10:16:14.870658Z"
           },
           {
             "id": "bf32920535994d2ee32f91d1fb83262e",

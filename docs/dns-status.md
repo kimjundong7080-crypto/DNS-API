@@ -14,7 +14,7 @@
 | beautheart.com | 10 | david/julissa.ns.cloudflare.com |
 | deepstronglove.com | 7 | david/julissa.ns.cloudflare.com |
 | hotheartlove.com | 7 | david/julissa.ns.cloudflare.com |
-| notemptme.com | 7 | david/julissa.ns.cloudflare.com |
+| notemptme.com | 10 | david/julissa.ns.cloudflare.com |
 | shutupquick.com | 6 | david/julissa.ns.cloudflare.com |
 | uotoma.com | 10 | david/julissa.ns.cloudflare.com |
 
@@ -38,14 +38,14 @@ techlifeworld.com zone은 2026-10-18 삭제됨 (생성 후 원복).
 | onemetalht.com | domain | 2027-06-13 | dns-parking.com |
 | amazone9shop.com | domain | 2027-07-09 | Cloudflare |
 
-## Blogger (beautheart.com → techpodto.blogspot.com)
+## Blogger 연결 (2건)
 
-| 항목 | 상태 |
-|---|---|
-| 대상 블로그 | `techpodto.blogspot.com` ("일상의 기록") |
-| A | beautheart.com → 216.239.32.21 / .34.21 / .36.21 / .38.21 (DNS only) |
-| CNAME | www.beautheart.com → ghs.google.com (DNS only) |
-| 메일 | `mail` A, MX(mail.beautheart.com), SPF/DKIM/DMARC 유지 |
-| CAA | 없음 → Google 인증서 발급 가능 |
-| 기존 사이트 | WordPress(A 217.77.4.134) 백업: `docs/backup-beautheart-20261018.json` |
-| 남은 작업 | Blogger에서 `www.beautheart.com` 추가 (UI) 후 HTTPS/리디렉션 설정 |
+| 도메인 | 블로그 | A | www CNAME | 메일 | 상태 |
+|---|---|---|---|---|---|
+| beautheart.com | techpodto.blogspot.com | Google 4 IP (DNS only) | ghs.google.com | 유지 | Blogger 도메인 추가 대기 |
+| notemptme.com | timemaina.blogspot.com | Google 4 IP (DNS only) | ghs.google.com | 유지 | Blogger 도메인 추가 대기 |
+
+- CAA 없음 → Google 인증서 발급 가능
+- Google 원본 직접 요청 시 404 (Blogger 매핑 전 정상)
+- `mail.notemptme.com` A 레코드 없음 → MX 대상 미해석 (전환 전부터 존재한 상태)
+- 기존 사이트 백업: `docs/backup-beautheart-20261018.json`, `docs/backup-notemptme-20261018.json`
