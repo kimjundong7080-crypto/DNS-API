@@ -41,11 +41,10 @@
 
 | 항목 | 상태 |
 |---|---|
-| www CNAME → ghs.google.com | 정상 (프록시 끔) |
-| apex A 4개 → Google IP | 정상 (프록시 끔) |
-| CAA | `pki.goog`, `letsencrypt.org` 등 허용 (Google 발급 가능) |
-| Google 소유확인 CNAME | `hnivbinxwuoh` → `dv.googlehosted.com` |
-| MX | mx1/mx2.hostinger.com 유지 |
-| http://www | 200 |
-| http://apex | 404 (Blogger 도메인 리디렉션 미설정) |
-| https | 인증서 발급 대기 (CAA 차단 해소 후 재시도 필요) |
+| 프록시 | 켜짐 (A 4개, www CNAME) |
+| Cloudflare SSL | Universal SSL active, `flexible`, Always Use HTTPS on |
+| apex 리디렉션 | Cloudflare Redirect Rule 301 → `https://www.techlifeworld.com` |
+| 캐시 규칙 | 전체 삭제, cache_level `basic` |
+| 커스텀 보안 규칙 | 전체 삭제 (Cloudflare 관리형 WAF/DDoS는 제거 불가) |
+| MX / SPF | 유지 |
+| 확인 | `https://www` 200, `https://apex` 301 → www (엣지 기준) |

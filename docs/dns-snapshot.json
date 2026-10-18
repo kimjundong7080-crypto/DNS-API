@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T08:29:05+00:00",
+  "generated_at": "2026-10-18T10:06:06+00:00",
   "cloudflare": {
     "zones": [
       {
@@ -726,34 +726,19 @@
         ],
         "records": [
           {
-            "id": "87c51d791d846093f04cd6cd0de59fde",
+            "id": "3176088fc71535759deb76313e552b89",
             "name": "techlifeworld.com",
             "type": "A",
-            "content": "216.239.38.21",
+            "content": "216.239.32.21",
             "proxiable": true,
-            "proxied": false,
+            "proxied": true,
             "ttl": 1,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
-            "created_on": "2026-10-11T17:12:26.507682Z",
-            "modified_on": "2026-10-11T17:12:26.507682Z"
-          },
-          {
-            "id": "2a7038c07243811b7e40347a478e3f54",
-            "name": "techlifeworld.com",
-            "type": "A",
-            "content": "216.239.36.21",
-            "proxiable": true,
-            "proxied": false,
-            "ttl": 1,
-            "settings": {},
-            "meta": {},
-            "comment": null,
-            "tags": [],
-            "created_on": "2026-10-11T17:12:21.040377Z",
-            "modified_on": "2026-10-11T17:12:21.040377Z"
+            "created_on": "2026-10-11T17:04:55.341612Z",
+            "modified_on": "2026-10-18T10:04:22.622219Z"
           },
           {
             "id": "5100315e80755d16893133f4a1213c7a",
@@ -761,29 +746,44 @@
             "type": "A",
             "content": "216.239.34.21",
             "proxiable": true,
-            "proxied": false,
+            "proxied": true,
             "ttl": 1,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
             "created_on": "2026-10-11T17:12:11.071208Z",
-            "modified_on": "2026-10-11T17:12:15.262603Z"
+            "modified_on": "2026-10-18T10:04:22.366797Z"
           },
           {
-            "id": "3176088fc71535759deb76313e552b89",
+            "id": "2a7038c07243811b7e40347a478e3f54",
             "name": "techlifeworld.com",
             "type": "A",
-            "content": "216.239.32.21",
+            "content": "216.239.36.21",
             "proxiable": true,
-            "proxied": false,
+            "proxied": true,
             "ttl": 1,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
-            "created_on": "2026-10-11T17:04:55.341612Z",
-            "modified_on": "2026-10-11T17:04:55.341612Z"
+            "created_on": "2026-10-11T17:12:21.040377Z",
+            "modified_on": "2026-10-18T10:04:22.09359Z"
+          },
+          {
+            "id": "87c51d791d846093f04cd6cd0de59fde",
+            "name": "techlifeworld.com",
+            "type": "A",
+            "content": "216.239.38.21",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-11T17:12:26.507682Z",
+            "modified_on": "2026-10-18T10:04:21.858077Z"
           },
           {
             "id": "e1da8f11478d8889404bb5adfa86f216",
@@ -848,7 +848,7 @@
             "type": "CNAME",
             "content": "ghs.google.com",
             "proxiable": true,
-            "proxied": false,
+            "proxied": true,
             "ttl": 1,
             "settings": {
               "flatten_cname": false
@@ -857,7 +857,7 @@
             "comment": null,
             "tags": [],
             "created_on": "2026-10-11T17:05:27.810487Z",
-            "modified_on": "2026-10-11T17:05:34.87842Z"
+            "modified_on": "2026-10-18T10:04:23.043062Z"
           },
           {
             "id": "278513192b41bdbcdb6e7cca43c8001e",
