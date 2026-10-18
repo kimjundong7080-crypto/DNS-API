@@ -11,7 +11,7 @@
 | Zone | 레코드 수 | 네임서버 |
 |---|---|---|
 | amazone9shop.com | 8 | david/julissa.ns.cloudflare.com |
-| beautheart.com | 7 | david/julissa.ns.cloudflare.com |
+| beautheart.com | 10 | david/julissa.ns.cloudflare.com |
 | deepstronglove.com | 7 | david/julissa.ns.cloudflare.com |
 | hotheartlove.com | 7 | david/julissa.ns.cloudflare.com |
 | notemptme.com | 7 | david/julissa.ns.cloudflare.com |
@@ -38,12 +38,14 @@ techlifeworld.com zone은 2026-10-18 삭제됨 (생성 후 원복).
 | onemetalht.com | domain | 2027-06-13 | dns-parking.com |
 | amazone9shop.com | domain | 2027-07-09 | Cloudflare |
 
-## Blogger (techlifeworld.com → techpodto.blogspot.com)
+## Blogger (beautheart.com → techpodto.blogspot.com)
 
 | 항목 | 상태 |
 |---|---|
 | 대상 블로그 | `techpodto.blogspot.com` ("일상의 기록") |
-| DNS | Hostinger 원복: A 4개(Google), `www` CNAME → ghs.google.com |
-| Google 소유확인 CNAME | `hnivbinxwuoh` → `dv.googlehosted.com` |
-| CAA | `letsencrypt.org`만 허용 → Google 인증서 발급 차단 |
-| 남은 작업 | Blogger에서 `www.techlifeworld.com` 추가 (UI), CAA에 `pki.goog` 추가 필요 |
+| A | beautheart.com → 216.239.32.21 / .34.21 / .36.21 / .38.21 (DNS only) |
+| CNAME | www.beautheart.com → ghs.google.com (DNS only) |
+| 메일 | `mail` A, MX(mail.beautheart.com), SPF/DKIM/DMARC 유지 |
+| CAA | 없음 → Google 인증서 발급 가능 |
+| 기존 사이트 | WordPress(A 217.77.4.134) 백업: `docs/backup-beautheart-20261018.json` |
+| 남은 작업 | Blogger에서 `www.beautheart.com` 추가 (UI) 후 HTTPS/리디렉션 설정 |

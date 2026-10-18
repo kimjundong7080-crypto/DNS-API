@@ -1,0 +1,150 @@
+﻿[
+    {
+        "id":  "52e1b9f52f36f9f340042ce9be79c885",
+        "name":  "beautheart.com",
+        "type":  "A",
+        "content":  "217.77.4.134",
+        "proxiable":  true,
+        "proxied":  true,
+        "ttl":  1,
+        "settings":  {
+
+                     },
+        "meta":  {
+
+                 },
+        "comment":  null,
+        "tags":  [
+
+                 ],
+        "created_on":  "2026-09-07T08:05:47.48181Z",
+        "modified_on":  "2026-09-07T08:05:47.48181Z"
+    },
+    {
+        "id":  "d237999994189543be7fb7c313a74068",
+        "name":  "mail.beautheart.com",
+        "type":  "A",
+        "content":  "217.77.4.134",
+        "proxiable":  true,
+        "proxied":  false,
+        "ttl":  1,
+        "settings":  {
+
+                     },
+        "meta":  {
+
+                 },
+        "comment":  null,
+        "tags":  [
+
+                 ],
+        "created_on":  "2026-09-13T17:00:28.322668Z",
+        "modified_on":  "2026-09-13T17:02:32.149355Z"
+    },
+    {
+        "id":  "5c677a0c7fd117a1cc9f560f22643fee",
+        "name":  "www.beautheart.com",
+        "type":  "CNAME",
+        "content":  "beautheart.com",
+        "proxiable":  true,
+        "proxied":  true,
+        "ttl":  1,
+        "settings":  {
+                         "flatten_cname":  false
+                     },
+        "meta":  {
+
+                 },
+        "comment":  null,
+        "tags":  [
+
+                 ],
+        "created_on":  "2026-09-07T08:05:47.482754Z",
+        "modified_on":  "2026-09-07T08:05:47.482754Z"
+    },
+    {
+        "id":  "19272cdc5566e587704d33ea8a10dca6",
+        "name":  "beautheart.com",
+        "type":  "MX",
+        "content":  "mail.beautheart.com",
+        "priority":  10,
+        "proxiable":  false,
+        "proxied":  false,
+        "ttl":  1,
+        "settings":  {
+
+                     },
+        "meta":  {
+
+                 },
+        "comment":  null,
+        "tags":  [
+
+                 ],
+        "created_on":  "2026-09-07T08:05:47.481783Z",
+        "modified_on":  "2026-09-07T08:05:47.481783Z"
+    },
+    {
+        "id":  "121778041a5a2dfa6faca30cfcc5e528",
+        "name":  "beautheart.com",
+        "type":  "TXT",
+        "content":  "\"v=spf1 mx ip4:217.77.4.134 ~all\"",
+        "proxiable":  false,
+        "proxied":  false,
+        "ttl":  1,
+        "settings":  {
+
+                     },
+        "meta":  {
+
+                 },
+        "comment":  null,
+        "tags":  [
+
+                 ],
+        "created_on":  "2026-09-07T08:05:47.481832Z",
+        "modified_on":  "2026-09-07T08:05:47.481832Z"
+    },
+    {
+        "id":  "463cdcd328220feed919e11c1609655e",
+        "name":  "default._domainkey.beautheart.com",
+        "type":  "TXT",
+        "content":  "\"v=DKIM1; k=rsa; p=aaPanel\\236\\151\\144\\236\\132\\156_\\235\\179\\181\\236\\130\\172\\237\\149\\156_DKIM_\\237\\130\\164\\234\\176\\146\"",
+        "proxiable":  false,
+        "proxied":  false,
+        "ttl":  300,
+        "settings":  {
+
+                     },
+        "meta":  {
+
+                 },
+        "comment":  null,
+        "tags":  [
+
+                 ],
+        "created_on":  "2026-09-07T08:05:47.481753Z",
+        "modified_on":  "2026-09-07T08:05:47.481753Z"
+    },
+    {
+        "id":  "ef7691becb069ff0d5f2774d140f6083",
+        "name":  "_dmarc.beautheart.com",
+        "type":  "TXT",
+        "content":  "\"v=DMARC1; p=none\"",
+        "proxiable":  false,
+        "proxied":  false,
+        "ttl":  300,
+        "settings":  {
+
+                     },
+        "meta":  {
+
+                 },
+        "comment":  null,
+        "tags":  [
+
+                 ],
+        "created_on":  "2026-09-07T08:05:47.482006Z",
+        "modified_on":  "2026-09-07T08:05:47.482006Z"
+    }
+]
