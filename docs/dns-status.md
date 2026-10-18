@@ -1,6 +1,6 @@
 # DNS 현황 스냅샷
 
-- 생성 시각: 2026-10-18T03:51:57Z
+- 생성 시각: 2026-10-18T08:25Z (Cloudflare 이전 완료)
 - 원본 데이터: `docs/dns-snapshot.json` (`python dns_api.py snapshot`으로 갱신)
 - 자격증명: `local/credentials.json` (Git 제외, 절대 커밋 금지)
 
@@ -10,6 +10,7 @@
 
 | Zone | 레코드 수 | 네임서버 |
 |---|---|---|
+| techlifeworld.com | 11 | david/julissa.ns.cloudflare.com |
 | amazone9shop.com | 8 | david/julissa.ns.cloudflare.com |
 | beautheart.com | 7 | david/julissa.ns.cloudflare.com |
 | deepstronglove.com | 7 | david/julissa.ns.cloudflare.com |
@@ -25,7 +26,7 @@
 
 | 도메인 | 유형 | 만료 | 네임서버 |
 |---|---|---|---|
-| techlifeworld.com | domain | 2027-04-09 | dns-parking.com |
+| techlifeworld.com | domain | 2027-04-09 | Cloudflare (2026-10-18 이전) |
 | shutupquick.com | domain | 2027-04-16 | Cloudflare |
 | notemptme.com | domain | 2027-04-16 | Cloudflare |
 | beautheart.com | domain | 2027-04-16 | Cloudflare |
@@ -40,8 +41,11 @@
 
 | 항목 | 상태 |
 |---|---|
-| www CNAME → ghs.google.com | 정상 |
-| apex A 4개 → Google IP | 정상 |
+| www CNAME → ghs.google.com | 정상 (프록시 끔) |
+| apex A 4개 → Google IP | 정상 (프록시 끔) |
+| CAA | `pki.goog`, `letsencrypt.org` 등 허용 (Google 발급 가능) |
+| Google 소유확인 CNAME | `hnivbinxwuoh` → `dv.googlehosted.com` |
+| MX | mx1/mx2.hostinger.com 유지 |
 | http://www | 200 |
-| http://apex | 404 (도메인 리디렉션 미설정) |
-| https | 인증서 미발급 (Blogger HTTPS 설정/발급 대기) |
+| http://apex | 404 (Blogger 도메인 리디렉션 미설정) |
+| https | 인증서 발급 대기 (CAA 차단 해소 후 재시도 필요) |

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T03:51:57+00:00",
+  "generated_at": "2026-10-18T08:29:05+00:00",
   "cloudflare": {
     "zones": [
       {
@@ -713,6 +713,198 @@
             "tags": [],
             "created_on": "2026-09-13T17:03:40.544257Z",
             "modified_on": "2026-09-13T17:03:40.544257Z"
+          }
+        ]
+      },
+      {
+        "id": "06e6ad4f84c7e0d8caa90e4ac6da4d5c",
+        "name": "techlifeworld.com",
+        "status": "active",
+        "name_servers": [
+          "david.ns.cloudflare.com",
+          "julissa.ns.cloudflare.com"
+        ],
+        "records": [
+          {
+            "id": "87c51d791d846093f04cd6cd0de59fde",
+            "name": "techlifeworld.com",
+            "type": "A",
+            "content": "216.239.38.21",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 1,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-11T17:12:26.507682Z",
+            "modified_on": "2026-10-11T17:12:26.507682Z"
+          },
+          {
+            "id": "2a7038c07243811b7e40347a478e3f54",
+            "name": "techlifeworld.com",
+            "type": "A",
+            "content": "216.239.36.21",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 1,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-11T17:12:21.040377Z",
+            "modified_on": "2026-10-11T17:12:21.040377Z"
+          },
+          {
+            "id": "5100315e80755d16893133f4a1213c7a",
+            "name": "techlifeworld.com",
+            "type": "A",
+            "content": "216.239.34.21",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 1,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-11T17:12:11.071208Z",
+            "modified_on": "2026-10-11T17:12:15.262603Z"
+          },
+          {
+            "id": "3176088fc71535759deb76313e552b89",
+            "name": "techlifeworld.com",
+            "type": "A",
+            "content": "216.239.32.21",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 1,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-11T17:04:55.341612Z",
+            "modified_on": "2026-10-11T17:04:55.341612Z"
+          },
+          {
+            "id": "e1da8f11478d8889404bb5adfa86f216",
+            "name": "techlifeworld.com",
+            "type": "CAA",
+            "content": "0 issue \"pki.goog\"",
+            "proxiable": false,
+            "proxied": false,
+            "ttl": 3600,
+            "data": {
+              "flags": 0,
+              "tag": "issue",
+              "value": "pki.goog"
+            },
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-18T08:23:24.324764Z",
+            "modified_on": "2026-10-18T08:23:24.324764Z"
+          },
+          {
+            "id": "bb956aba7c8a42ef4159b4435b374447",
+            "name": "techlifeworld.com",
+            "type": "CAA",
+            "content": "0 issue \"letsencrypt.org\"",
+            "proxiable": false,
+            "proxied": false,
+            "ttl": 3600,
+            "data": {
+              "flags": 0,
+              "tag": "issue",
+              "value": "letsencrypt.org"
+            },
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-18T08:23:24.045354Z",
+            "modified_on": "2026-10-18T08:23:24.045354Z"
+          },
+          {
+            "id": "4496f2a726b12d7033fca4de1c81dcf7",
+            "name": "hnivbinxwuoh.techlifeworld.com",
+            "type": "CNAME",
+            "content": "gv-baqjyuiig2umce.dv.googlehosted.com",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 1,
+            "settings": {
+              "flatten_cname": false
+            },
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-11T17:11:23.108216Z",
+            "modified_on": "2026-10-11T17:11:23.108216Z"
+          },
+          {
+            "id": "56c75f3c23539bb6739da3e3db6391ce",
+            "name": "www.techlifeworld.com",
+            "type": "CNAME",
+            "content": "ghs.google.com",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 1,
+            "settings": {
+              "flatten_cname": false
+            },
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-11T17:05:27.810487Z",
+            "modified_on": "2026-10-11T17:05:34.87842Z"
+          },
+          {
+            "id": "278513192b41bdbcdb6e7cca43c8001e",
+            "name": "techlifeworld.com",
+            "type": "MX",
+            "content": "mx2.hostinger.com",
+            "priority": 10,
+            "proxiable": false,
+            "proxied": false,
+            "ttl": 14400,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-18T08:23:02.310817Z",
+            "modified_on": "2026-10-18T08:23:02.310817Z"
+          },
+          {
+            "id": "0e45d8d8f498313cf30efa40bb527c32",
+            "name": "techlifeworld.com",
+            "type": "MX",
+            "content": "mx1.hostinger.com",
+            "priority": 5,
+            "proxiable": false,
+            "proxied": false,
+            "ttl": 14400,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-18T08:23:02.031093Z",
+            "modified_on": "2026-10-18T08:23:02.031093Z"
+          },
+          {
+            "id": "6f207f5ea2d9407d05b13070e2808621",
+            "name": "techlifeworld.com",
+            "type": "TXT",
+            "content": "v=spf1 include:_spf.mail.hostinger.com ~all",
+            "proxiable": false,
+            "proxied": false,
+            "ttl": 3600,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-18T08:23:02.563937Z",
+            "modified_on": "2026-10-18T08:23:02.563937Z"
           }
         ]
       },
