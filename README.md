@@ -26,7 +26,14 @@ python dns_api.py hs-domains
 python dns_api.py hs-domain example.com
 python dns_api.py hs-ns-set example.com --ns1 ns1.example.net --ns2 ns2.example.net
 python dns_api.py blogger-setup --zone example.com
+python dns_api.py snapshot --out docs/dns-snapshot.json
 ```
+
+## 로컬 자료
+
+- `local/credentials.json` — API 토큰/키 (Git 제외)
+- `docs/dns-snapshot.json` — Cloudflare zone/레코드/터널 + Hostinger 도메인 스냅샷
+- `docs/dns-status.md` — 사람이 읽는 현황 요약
 
 ## Blogger 연결
 

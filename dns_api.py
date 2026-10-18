@@ -2,6 +2,7 @@
 """DNS-API: Cloudflare / Hostinger / Blogger DNS helper (stdlib only)."""
 
 import argparse
+import datetime
 import json
 import os
 import sys
@@ -307,6 +308,59 @@ def blogger_setup(args):
     return 0 if all(r["status"] in (200, 201) for r in results) else 1
 
 
+def snapshot(args):
+    """Write a local JSON snapshot of zones, DNS records and tunnels."""
+    token = cf_token()
+    code, payload = api("GET", CF_BASE + "/zones?per_page=50", token)
+    if code != 200:
+        out(payload)
+        return 1
+    zones = []
+    for zone in payload["result"]:
+        code, records = api(
+            "GET",
+            CF_BASE + "/zones/" + zone["id"] + "/dns_records?per_page=100",
+            token,
+        )
+        zones.append(
+            {
+                "id": zone["id"],
+                "name": zone["name"],
+                "status": zone["status"],
+                "name_servers": zone.get("name_servers"),
+                "records": records.get("result", []) if code == 200 else [],
+            }
+        )
+
+    data = {
+        "generated_at": datetime.datetime.now(datetime.timezone.utc)
+        .replace(microsecond=0)
+        .isoformat(),
+        "cloudflare": {"zones": zones},
+    }
+
+    if os.environ.get("CF_ACCOUNT_ID"):
+        url = CF_BASE + "/accounts/" + cf_account() + "/cfd_tunnel?is_deleted=false"
+        code, tunnels = api("GET", url, token)
+        data["cloudflare"]["tunnels"] = (
+            tunnels.get("result", []) if code == 200 else []
+        )
+
+    if os.environ.get("HOSTINGER_API_TOKEN"):
+        code, domains = api(
+            "GET", HS_BASE + "/domains/v1/portfolio", need("HOSTINGER_API_TOKEN")
+        )
+        data["hostinger"] = {"domains": domains if code == 200 else []}
+
+    target = os.path.abspath(args.out)
+    os.makedirs(os.path.dirname(target), exist_ok=True)
+    with open(target, "w", encoding="utf-8") as handle:
+        json.dump(data, handle, indent=2, ensure_ascii=False)
+        handle.write("\n")
+    print(target)
+    return 0
+
+
 def build_parser():
     parser = argparse.ArgumentParser(prog="dns-api", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -363,6 +417,12 @@ def build_parser():
     )
     p.add_argument("--zone", required=True, help="zone name, e.g. example.com")
     p.set_defaults(func=blogger_setup)
+
+    p = sub.add_parser(
+        "snapshot", help="write a local JSON snapshot of DNS state"
+    )
+    p.add_argument("--out", default="docs/dns-snapshot.json")
+    p.set_defaults(func=snapshot)
 
     return parser
 
