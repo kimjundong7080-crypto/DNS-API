@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T10:16:41+00:00",
+  "generated_at": "2026-10-18T13:08:18+00:00",
   "cloudflare": {
     "zones": [
       {
@@ -152,13 +152,13 @@
             "content": "216.239.38.21",
             "proxiable": true,
             "proxied": false,
-            "ttl": 3600,
+            "ttl": 1,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
             "created_on": "2026-10-18T10:15:09.684838Z",
-            "modified_on": "2026-10-18T10:15:09.684838Z"
+            "modified_on": "2026-10-18T10:26:02.364237Z"
           },
           {
             "id": "32e07b9fe6e9c76d8a9894e9f4bbda8f",
@@ -167,13 +167,13 @@
             "content": "216.239.36.21",
             "proxiable": true,
             "proxied": false,
-            "ttl": 3600,
+            "ttl": 1,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
             "created_on": "2026-10-18T10:15:09.345914Z",
-            "modified_on": "2026-10-18T10:15:09.345914Z"
+            "modified_on": "2026-10-18T10:26:02.098495Z"
           },
           {
             "id": "8652ee9205cf03ba1d235a6dac4a37c1",
@@ -182,13 +182,13 @@
             "content": "216.239.34.21",
             "proxiable": true,
             "proxied": false,
-            "ttl": 3600,
+            "ttl": 1,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
             "created_on": "2026-10-18T10:15:08.85803Z",
-            "modified_on": "2026-10-18T10:15:08.85803Z"
+            "modified_on": "2026-10-18T10:26:01.855261Z"
           },
           {
             "id": "d29b9aaac53e51b98d9bcc8998cc3e98",
@@ -197,13 +197,13 @@
             "content": "216.239.32.21",
             "proxiable": true,
             "proxied": false,
-            "ttl": 3600,
+            "ttl": 1,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
             "created_on": "2026-10-18T10:15:08.53908Z",
-            "modified_on": "2026-10-18T10:15:08.53908Z"
+            "modified_on": "2026-10-18T10:26:01.600326Z"
           },
           {
             "id": "d237999994189543be7fb7c313a74068",
@@ -221,10 +221,10 @@
             "modified_on": "2026-09-13T17:02:32.149355Z"
           },
           {
-            "id": "5c677a0c7fd117a1cc9f560f22643fee",
-            "name": "www.beautheart.com",
+            "id": "264f28c8c8f49e1dfb7d03a28e190ac5",
+            "name": "4vpn3zokdkh3.beautheart.com",
             "type": "CNAME",
-            "content": "ghs.google.com",
+            "content": "gv-iraase576v757v.dv.googlehosted.com",
             "proxiable": true,
             "proxied": false,
             "ttl": 3600,
@@ -234,8 +234,42 @@
             "meta": {},
             "comment": null,
             "tags": [],
+            "created_on": "2026-10-18T10:19:07.174666Z",
+            "modified_on": "2026-10-18T10:19:07.174666Z"
+          },
+          {
+            "id": "43a3c55a24f2472a697e232fe5019434",
+            "name": "uhziy4ctu7hf.beautheart.com",
+            "type": "CNAME",
+            "content": "gv-svikmi4yisjlmo.dv.googlehosted.com",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 3600,
+            "settings": {
+              "flatten_cname": false
+            },
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-18T10:19:26.15836Z",
+            "modified_on": "2026-10-18T10:19:26.15836Z"
+          },
+          {
+            "id": "5c677a0c7fd117a1cc9f560f22643fee",
+            "name": "www.beautheart.com",
+            "type": "CNAME",
+            "content": "ghs.google.com",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 1,
+            "settings": {
+              "flatten_cname": false
+            },
+            "meta": {},
+            "comment": null,
+            "tags": [],
             "created_on": "2026-09-07T08:05:47.482754Z",
-            "modified_on": "2026-10-18T10:15:18.001586Z"
+            "modified_on": "2026-10-18T10:26:02.859448Z"
           },
           {
             "id": "19272cdc5566e587704d33ea8a10dca6",
@@ -554,13 +588,13 @@
             "content": "216.239.38.21",
             "proxiable": true,
             "proxied": false,
-            "ttl": 3600,
+            "ttl": 1,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
             "created_on": "2026-10-18T10:16:14.630421Z",
-            "modified_on": "2026-10-18T10:16:14.630421Z"
+            "modified_on": "2026-10-18T10:26:04.078181Z"
           },
           {
             "id": "399c298bcdeb7f4ef168d8a41722cc36",
@@ -569,13 +603,13 @@
             "content": "216.239.36.21",
             "proxiable": true,
             "proxied": false,
-            "ttl": 3600,
+            "ttl": 1,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
             "created_on": "2026-10-18T10:16:14.352305Z",
-            "modified_on": "2026-10-18T10:16:14.352305Z"
+            "modified_on": "2026-10-18T10:26:03.852117Z"
           },
           {
             "id": "0eab40e4c42a77c8c99a9b7f75c6416a",
@@ -584,13 +618,13 @@
             "content": "216.239.34.21",
             "proxiable": true,
             "proxied": false,
-            "ttl": 3600,
+            "ttl": 1,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
             "created_on": "2026-10-18T10:16:14.120248Z",
-            "modified_on": "2026-10-18T10:16:14.120248Z"
+            "modified_on": "2026-10-18T10:26:03.616924Z"
           },
           {
             "id": "d5abb617ba0bac7789831587e24b5339",
@@ -599,19 +633,19 @@
             "content": "216.239.32.21",
             "proxiable": true,
             "proxied": false,
-            "ttl": 3600,
+            "ttl": 1,
             "settings": {},
             "meta": {},
             "comment": null,
             "tags": [],
             "created_on": "2026-10-18T10:16:13.842718Z",
-            "modified_on": "2026-10-18T10:16:13.842718Z"
+            "modified_on": "2026-10-18T10:26:03.361992Z"
           },
           {
-            "id": "078ba293d4d053dc4c40b82ef38fe841",
-            "name": "www.notemptme.com",
+            "id": "700f8d5320ddb499857fd4a65c3db4b0",
+            "name": "4vpn3zokdkh3.notemptme.com",
             "type": "CNAME",
-            "content": "ghs.google.com",
+            "content": "gv-iraase576v757v.dv.googlehosted.com",
             "proxiable": true,
             "proxied": false,
             "ttl": 3600,
@@ -621,8 +655,42 @@
             "meta": {},
             "comment": null,
             "tags": [],
+            "created_on": "2026-10-18T10:19:06.847402Z",
+            "modified_on": "2026-10-18T10:19:06.847402Z"
+          },
+          {
+            "id": "6a81e3d839fdd8c4ddba3b9d7cea3e23",
+            "name": "uhziy4ctu7hf.notemptme.com",
+            "type": "CNAME",
+            "content": "gv-svikmi4yisjlmo.dv.googlehosted.com",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 3600,
+            "settings": {
+              "flatten_cname": false
+            },
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-18T10:19:25.854069Z",
+            "modified_on": "2026-10-18T10:19:25.854069Z"
+          },
+          {
+            "id": "078ba293d4d053dc4c40b82ef38fe841",
+            "name": "www.notemptme.com",
+            "type": "CNAME",
+            "content": "ghs.google.com",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 1,
+            "settings": {
+              "flatten_cname": false
+            },
+            "meta": {},
+            "comment": null,
+            "tags": [],
             "created_on": "2026-09-07T07:58:16.694347Z",
-            "modified_on": "2026-10-18T10:16:14.870658Z"
+            "modified_on": "2026-10-18T10:26:04.313553Z"
           },
           {
             "id": "bf32920535994d2ee32f91d1fb83262e",

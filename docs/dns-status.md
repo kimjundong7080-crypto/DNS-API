@@ -38,14 +38,14 @@ techlifeworld.com zone은 2026-10-18 삭제됨 (생성 후 원복).
 | onemetalht.com | domain | 2027-06-13 | dns-parking.com |
 | amazone9shop.com | domain | 2027-07-09 | Cloudflare |
 
-## Blogger 연결 (2건)
+## Blogger 연결 (2건) — 완료
 
-| 도메인 | 블로그 | A | www CNAME | 메일 | 상태 |
-|---|---|---|---|---|---|
-| beautheart.com | techpodto.blogspot.com | Google 4 IP (DNS only) | ghs.google.com | 유지 | Blogger 도메인 추가 대기 |
-| notemptme.com | timemaina.blogspot.com | Google 4 IP (DNS only) | ghs.google.com | 유지 | Blogger 도메인 추가 대기 |
+| 도메인 | 블로그 | HTTPS | apex → www |
+|---|---|---|---|
+| beautheart.com | techpodto.blogspot.com ("일상의 기록") | 200, Google Trust Services | 301 |
+| notemptme.com | timemaina.blogspot.com ("일상 지식이야기") | 200, Google Trust Services | 301 |
 
-- CAA 없음 → Google 인증서 발급 가능
-- Google 원본 직접 요청 시 404 (Blogger 매핑 전 정상)
-- `mail.notemptme.com` A 레코드 없음 → MX 대상 미해석 (전환 전부터 존재한 상태)
+- DNS only (프록시 OFF), CAA 없음
+- Google 소유확인 CNAME 2종 양쪽 도메인에 존재
+- `mail.notemptme.com` A 레코드 없음 → MX 대상 미해석 (전환 전부터 존재)
 - 기존 사이트 백업: `docs/backup-beautheart-20261018.json`, `docs/backup-notemptme-20261018.json`
